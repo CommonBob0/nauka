@@ -7,7 +7,11 @@ public class Kontener {
 	
 	Generator generuj = null;
 	static List<Proces> lista_procesow = new ArrayList<Proces>();
-	static double srednia = 0;
+	
+	static double sredniaFcfs = 0;
+	static double sredniaSjfb = 0;
+	static double sredniaSjfw = 0;
+	static double sredniaRot = 0;
 	
 	// sumy srednich
 	static double suma_Fcfs = 0;
@@ -17,7 +21,6 @@ public class Kontener {
 	
 	public Kontener(){
 		Generator.num = 0;
-		srednia = 0;
 		
 	}
 	// liczba procesow

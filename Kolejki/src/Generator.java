@@ -10,6 +10,6 @@ public class Generator {
 		//proces.numer = ++num;
 		proces.dlugosc_fazy = losuj.nextInt(10)+1;
 		proces.czas_oczekiwania = 0;
-		proces.moment_zgloszenia = losuj.nextInt(10)+1;
+		proces.moment_zgloszenia = losuj.nextInt(1)+1;
 	}
 }

@@ -7,6 +7,7 @@ public class Sjfw extends Kontener{
 	int mozliwosc_wykonywania = 0;
 	
 	public Sjfw() {
+		Kontener.sredniaSjfw = 0;
 		wykonuj();
 		srednia();
 	}
@@ -90,8 +91,8 @@ public class Sjfw extends Kontener{
 		for(Proces temp: lista_procesow){
 			suma += temp.czas_oczekiwania;
 		}
-		Kontener.srednia = suma / lista_procesow.size();
-		Kontener.suma_Sjfw += srednia;
+		Kontener.sredniaSjfw = suma / lista_procesow.size();
+		Kontener.suma_Sjfw += sredniaSjfw;
 	}
 		
 }

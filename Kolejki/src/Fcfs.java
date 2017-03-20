@@ -6,6 +6,7 @@ public class Fcfs extends Kontener {
 	int mozliwosc_wykonywania = 0;
 	
 	public Fcfs() {
+		Kontener.sredniaFcfs = 0;
 		wykonuj();
 		srednia();
 	}
@@ -49,8 +50,8 @@ public class Fcfs extends Kontener {
 		for(Proces temp: lista_procesow){
 			suma += temp.czas_oczekiwania;
 		}
-		Kontener.srednia = suma / lista_procesow.size();
-		Kontener.suma_Fcfs += srednia;
+		Kontener.sredniaFcfs = suma / lista_procesow.size();
+		Kontener.suma_Fcfs += sredniaFcfs;
 	}
 
 

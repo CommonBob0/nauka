@@ -4,8 +4,8 @@ public class Main {
 
 	public static void main(String[] args) throws InstantiationException, IllegalAccessException {
 		Kontener kontener = null;
-		int liczba_procesow = 3;
-		int liczba_testow = 1;
+		int liczba_procesow = 6;
+		int liczba_testow = 3;
 		Kontener kon2 = null;
 
 		for (int j = 0; j < liczba_testow; j++) // liczba prób
@@ -18,39 +18,39 @@ public class Main {
 			Collections.sort(Kontener.lista_procesow);
 
 			// wygenerowane procesy po sortowaniu
-			kontener.wyswietl();
+			//kontener.wyswietl();
 			System.out.println();
 			System.out.println();
 			// FCFS
 			kontener.wybierz(Fcfs.class);
-			kontener.wyswietl();
-			System.out.println("Œrednia FCFS: " + kontener.srednia);
-			System.out.println();
-			System.out.println();
+			//kontener.wyswietl();
+			//System.out.println("Œrednia FCFS: " + Kontener.sredniaFcfs);
+			//System.out.println();
+			//System.out.println();
 
 			// ROT
 			kontener.wybierz(Rot.class);
-			kontener.wyswietl();
-			System.out.println();
-			System.out.println("Œrednia ROT: " + Kontener.srednia);
-			System.out.println();
-			System.out.println();
+			//kontener.wyswietl();
+			//System.out.println();
+			//System.out.println("Œrednia ROT: " + Kontener.srednia);
+			//System.out.println();
+			//System.out.println();
 			
 			// SJFb
 			kontener.wybierz(Sjfb.class);
-			kontener.wyswietl();
-			System.out.println();
-			System.out.println("Œrednia SJFb: " + Kontener.srednia);
-			System.out.println();
-			System.out.println();
+			//kontener.wyswietl();
+			//System.out.println();
+			//System.out.println("Œrednia SJFb: " + Kontener.srednia);
+			//System.out.println();
+			//System.out.println();
 
 			// SJFw
 			kontener.wybierz(Sjfw.class);
-			kontener.wyswietl();
-			System.out.println();
-			System.out.println("Œrednia SJFw: " + Kontener.srednia);
-			System.out.println();
-			System.out.println();
+			//kontener.wyswietl();
+			//System.out.println();
+			//System.out.println("Œrednia SJFw: " + Kontener.srednia);
+			//System.out.println();
+			//System.out.println();
 
 		}
 
